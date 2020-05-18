@@ -98,12 +98,14 @@ export class JeopardyCard extends Component {
             <div>
               {this.state.dailydouble
                 ? (
-                  <div>
+                  <div className='daily-double'>
                     DAILY DOUBLE
-                    <input id='daily-double' type='text' placeholder='Enter Wager Amount' />
-                    <button className='jeopardy-button' onClick={this.toggleDailyDouble}>
-                      Bet
-                    </button>
+                    <div>
+                      <input id='daily-double' type='text' placeholder='Enter Wager Amount' />
+                      <button className='jeopardy-button' onClick={this.toggleDailyDouble}>
+                        Bet
+                      </button>
+                    </div>
                   </div>
                 )
                 : (

@@ -60,3 +60,9 @@
 .jeopardy-card-component.full-screen:hover {
   background-color: #060CE9;
 }
+
+.jeopardy-card-component .daily-double {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
