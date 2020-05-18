@@ -1,0 +1,36 @@
+.footer-component {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+
+.footer-component .team {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center
+}
+
+.footer-component .button-exit {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.footer-component .team-name {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.footer-component .team-score {
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.footer-component .team-score.positive {
+  color: green;
+}
+
+.footer-component .team-score.negative {
+  color: red;
+}

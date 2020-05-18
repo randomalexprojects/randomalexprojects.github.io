@@ -1,35 +1,36 @@
+button {
+  width: 100px;
+}
+
+input {
+  width: 200px;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  padding-left: 15px;
+}
+
 .app {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-.app-header {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.app-header-nav {
-  display: flex;
-}
-
-.app-header-nav p {
-  padding: 1rem;
-  margin: 0;
-}
-
-.app-content {
-  background: #999;
-  display: flex;
-  flex: 1;
+.jeopardy-button {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border-radius: 3px;
+  background: black;
+  color: white;
+  cursor: pointer;
   height: 100%;
-  padding: 3rem;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+  outline: none;
 }
 
-.app-content .page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+.jeopardy-button:hover {
+  background-color: #060CE9;
+  color: white;
 }
