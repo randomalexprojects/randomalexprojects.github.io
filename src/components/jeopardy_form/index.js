@@ -10,7 +10,7 @@ export const JeopardyForm = ({getData}) => (
     </div>
     <br />
     <div className='jeopardy-spreadsheet'>
-      <input id='url' type='text' placeholder='Enter Public Google Spreadsheet ID' />
+      <input id='spreadsheet-id' type='text' placeholder='Enter Public Google Spreadsheet ID' />
       <button className='jeopardy-button' onClick={getData}>Load</button>
     </div>
   </div>

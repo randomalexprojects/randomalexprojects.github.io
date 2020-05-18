@@ -23,8 +23,11 @@ class App extends Component {
   /**
    * Retrieves data for given Google Spreadsheet URL
    */
-  async getData (e, spreadsheetKey = '1_FvdrAAveGHjV2lllBvM05SvIcrDyJm8xlsZar6HC3Q') {
-    const url = `https://spreadsheets.google.com/feeds/cells/${spreadsheetKey}/1/public/full?alt=json`
+  async getData (e) {
+    const spreadsheetId = document.getElementById('spreadsheet-id').value
+      ? document.getElementById('spreadsheet-id').value
+      : '1_FvdrAAveGHjV2lllBvM05SvIcrDyJm8xlsZar6HC3Q'
+    const url = `https://spreadsheets.google.com/feeds/cells/${spreadsheetId}/1/public/full?alt=json`
     try {
       const response = await fetch(url)
       const responseJson = await response.json()
